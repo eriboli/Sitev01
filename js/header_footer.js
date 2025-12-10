@@ -11,7 +11,7 @@ document.getElementById('common-header').innerHTML = `
         </a>
         <div class="menu">
             <nav class="navtop">
-                <a href="cadastro.html"><i class="fa-solid fa-feather-pointed"></i>Inscreva-se</a>
+                <a class="show-on-index button-style" href="cadastro.html"><i class="fa-solid fa-feather-pointed"></i>Inscreva-se</a>
                 <a href="jovens.html"><i class="fa-solid fa-child-reaching" aria-hidden="true"></i>Jovens</a>
                 <a href="acoes-sociais.html"><i class="fa-solid fa-hand-holding-heart"></i>Ações Sociais</a>
                 <a href="doe.html"><i class="fa-solid fa-circle-dollar-to-slot"></i>Doe</a>

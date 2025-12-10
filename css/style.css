@@ -13,10 +13,12 @@
 
 a {
     text-decoration: none;
-    color: var(--nav-color);
+    color: var(--pri-color);
 }
 
 h1 {
+    font-size: 18px;
+    font-weight: 800;
     text-align: center;
     text-transform: uppercase;
     margin: 50px;
@@ -84,6 +86,7 @@ p {
 }
 
 .navtop a {
+    color: var(--nav-color);
     display: block;
     padding: 15px;
     font-size: 14px;
@@ -91,21 +94,80 @@ p {
     font-weight: 600;
 }
 
-.navtop a:nth-child(1) {
+.show-on-index {
+    display: none !important; /* Esconde o botão inscreva-se por padrão */
+}
+
+.home .show-on-index {
+    display: list-item !important; /* Exibe o botão se a classe "home" for definida no body */
+}
+
+.button-style {
     border: 1px solid var(--sec-color);
     background-color: var(--sec-color);
     border-radius: 0.3rem;
-    padding: 6px;
+    padding: 6px 10px;
+    color: var(--nav-color);
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-.navtop a:nth-child(1):hover {
-    border: 1px solid var(--sec-color);
+.button-style:hover {
     background-color: transparent;
-    transition: 0.3s ease;
+    color: var(--sec-color);
+    /* transition: 0.5s ease; */
+}
+
+.navtop .button-style {
+    padding: 6px 10px;
 }
 
 .navtop :hover {
     color: var(--sec-color);
+}
+
+.main {
+    margin-top: 90px;
+    /*border: 5px solid var(--sec-color);
+    background-color: tomato;*/
+}
+
+form {
+    /* background-color: gray; */
+    padding: 20px;
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* padding: 100px; */
+    width: 500px;
+    /* background-color: tomato; */
+}
+
+.form-cadastro .button-style {
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    margin: 5px 0;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.checkbox-container {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    align-items: center;
+    cursor: pointer;
 }
 
 .news {
@@ -139,19 +201,8 @@ p {
     border-radius: 10px 10px 0 0;
 }
 
-.readmore {
-    margin: 0px 0 15px 15px;
-    background-color: var(--sec-color);
-    color: var(--nav-color);
-    padding: 6px 10px;
-    text-transform: uppercase;
-    border: 1px solid var(--sec-color);
-    border-radius: 0.3rem;
-}
-
-.readmore:hover {
-    background-color: transparent;
-    color: var(--sec-color);
+.news .button-style {
+    margin-left: 15px;
 }
 
 .content {
@@ -162,17 +213,45 @@ p {
     text-align: justify;
 }
 
+.calendar {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.calendar p {
+    display: flex;
+    color: var(--pri-color);
+    line-height: 0.5;
+    font-size: 18px;
+}
+
+.calendar p:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.calendar iframe {
+    margin: 20px auto; /* Make the iframe responsive within its container */
+    width: 100%;
+    height: 600px; /* Set a specific height */
+    border: none; /* Remove default Google border (optional, already in the HTML) */
+    border-radius: 1rem;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
 }
 
 .top-footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 8rem;
+    height: 110px;
     background-color: #634221ec;
     padding: 50px 10%;
 }
@@ -192,10 +271,11 @@ p {
 .information-footer {
     display: block;
     margin-top: 30px;
-    margin-left: 0px;
+    margin-left: 5px;
 }
 
 .information-footer a {
+    color: var(--nav-color);
     font-size: 14px;
     font-weight: 200;
 }
@@ -243,6 +323,7 @@ p {
 }
 
 .links a {
+    color: var(--nav-color);
     display: flex;
     margin: 0 0 0 5px;
     font-weight: 200;
@@ -253,6 +334,7 @@ p {
 }
 
 .links-social i {
+    color: var(--nav-color);
     font-size: 30px;
     margin: 0 0 0 5px;
 }
@@ -276,8 +358,8 @@ p {
     color: var(--nav-color);
 }
 
-.footer img {
-    width: 180px;
+.left-footer .logo-footer img {
+    width: 50px;
 }
 
 
