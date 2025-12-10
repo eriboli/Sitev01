@@ -1,14 +1,17 @@
 document.getElementById('common-header').innerHTML = `
     <header class="header">
-        
-        <div class="logo">
-            <a href="index.html">
-                <img src="./imgs/logo_ger.png">
-            </a>
-        </div>
+        <a class="logo-link" href="index.html">
+            <div class="logo">
+                <img src="./imgs/logo_ger_color.png">
+                <div class="logo-text">
+                    <p>Grupo Escoteiro</p>
+                    <p>Rastreadores</p>
+                </div>
+            </div>
+        </a>
         <div class="menu">
             <nav class="navtop">
-                <a class="inscricao" href="cadastro.html"><i class="fa-solid fa-feather-pointed"></i>Inscreva-se</a>
+                <a href="cadastro.html"><i class="fa-solid fa-feather-pointed"></i>Inscreva-se</a>
                 <a href="jovens.html"><i class="fa-solid fa-child-reaching" aria-hidden="true"></i>Jovens</a>
                 <a href="acoes-sociais.html"><i class="fa-solid fa-hand-holding-heart"></i>Ações Sociais</a>
                 <a href="doe.html"><i class="fa-solid fa-circle-dollar-to-slot"></i>Doe</a>
@@ -23,8 +26,13 @@ document.getElementById('common-footer').innerHTML = `
     <footer class="footer">
         <div class="top-footer">
             <div class="left-footer">
-                <a href="/"><img src="./imgs/logo_ger.png"></a>
-                
+                <div class="logo-footer">
+                    <img src="./imgs/logo_ger_white.png">
+                    <div class="logo-text">
+                        <p>Grupo Escoteiro</p>
+                        <p>Rastreadores</p>
+                    </div>
+                </div>
                 <div class="information-footer">
                     <a href="https://goo.gl/maps/estRwABPnUdxwmYo9">Rua Gongalves Dias, 590 - Portão/RS</a>
                     <p>Sábados, das 14:00 às 17:00</p>
