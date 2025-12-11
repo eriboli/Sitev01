@@ -401,7 +401,7 @@ input, textarea {
         font-size: 16px;
     }
     
-    .show-on-index {
+    .home .show-on-index {
     display: none !important; /* Esconde o botão inscreva-se por padrão */
     }
 
@@ -426,7 +426,7 @@ input, textarea {
         display: none;
     }
     .navtop i {
-        font-size: 20px;
+        font-size: 18px;
         margin-right: 0px;
     }
 
