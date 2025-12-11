@@ -366,8 +366,38 @@ input, textarea {
 
 
 @media (max-width: 920px) {
-    
     .header{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .logo-link {
+        margin-left: 10px;
+    }
+
+    .menu {
+        margin-right: 10px;
+    }
+    .header img {
+        width: 40px;
+    }
+
+    .nav-text {
+        display: none;
+    }
+    .navtop i {
+        font-size: 25px;
+        margin-right: 0px;
+    }
+
+    .navtop a {
+        padding: 8px;
+    }
+}
+
+
+@media (max-width: 360px) {
+   .header{
         display: flex;
         flex-wrap: nowrap;
     }
@@ -395,4 +425,3 @@ input, textarea {
         padding: 8px;
     }
 }
-
