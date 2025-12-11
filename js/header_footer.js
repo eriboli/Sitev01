@@ -1,5 +1,5 @@
 document.getElementById('common-header').innerHTML = `
-        <header class="header">
+    <header class="header">
         <a class="logo-link" href="index.html">
             <div class="logo">
                 <img src="./imgs/logo_ger_color.png">
