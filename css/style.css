@@ -70,7 +70,7 @@ h2 {
 }
 
 .menu {
-    margin-right: 20%;
+    margin-right: 20vw;
 }
 
 .navtop {
@@ -257,7 +257,6 @@ input, textarea {
 
 .logo-footer {
     display: flex;
-    opacity: 0.7;
 }
 
 .logo-footer img {
@@ -267,7 +266,7 @@ input, textarea {
 
 .data-footer {
     display: flex;
-    height: 100px;
+    height: min-content;
     align-items: flex-start;
     /* background-color: tomato; */
 }
@@ -295,7 +294,7 @@ input, textarea {
 .data-footer-column h3 {
     padding: 0px 10px;
     color: var(--nav-color);
-    font-weight: 200; /* Ajustar para eliminar a barra lateral direita*/
+    font-weight: 800; /* Ajustar para eliminar a barra lateral direita*/
     height: 18px;
     /*background-color: #f4cb23;*/
     border-left: 4px solid var(--sec-color);
@@ -314,7 +313,7 @@ input, textarea {
     justify-content: space-between;
     align-items: center;
     background-color: var(--pri-color);
-    padding: 10px 20%;
+    padding: 20px 20%;
     border-top: 1px solid #f4cb23;
 }
 
@@ -338,7 +337,7 @@ input, textarea {
 
 
 
-@media (max-width: 920px) {
+@media (max-width: 768px) {
     .header{
         display: flex;
         flex-wrap: nowrap;
@@ -365,6 +364,28 @@ input, textarea {
 
     .navtop a {
         padding: 8px;
+    }
+    
+    .top-footer {
+        flex-direction: column;
+        align-items: center;
+        height: 20vh;
+        padding: 40px 10%;
+    }
+    
+    .data-footer-column {
+        width: 10em;
+    }
+
+    .logo-footer img {
+        max-width: 40px;
+    }
+
+    .bottom-footer {
+        padding: 10px 10%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 }
 
@@ -411,13 +432,10 @@ input, textarea {
     .top-footer {
         flex-direction: column;
         align-items: center;
-        height: 25vh;
-        padding: 50px 5%;
+        height: 20vh;
+        padding: 40px 5%;
     }
 
-    .data-footer{
-        margin-bottom: 20px;
-    }
     .data-footer-column {
         width: 10em;
     }
@@ -430,6 +448,7 @@ input, textarea {
         padding: 10px 5%;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 10px;
     }
 
     .bottom-footer p {
