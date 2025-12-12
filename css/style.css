@@ -21,11 +21,15 @@ h1 {
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
-    margin: 50px;
+    padding: 30px 0;
 }
 
-h2 {
+/* h2 {
     margin: 5px;
+} */
+
+section {
+    padding-bottom: 50px;
 }
 
 .header {
@@ -46,7 +50,7 @@ h2 {
 }
 
 .logo-link {
-    margin-left: 20%;
+    margin-left: 20vw;
 }
 
 .logo {
@@ -85,7 +89,8 @@ h2 {
 .navtop a {
     color: var(--nav-color);
     display: block;
-    padding: 15px;
+    /* padding: 15px; */
+    padding: 6px 10px;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
@@ -116,7 +121,7 @@ h2 {
 }
 
 .navtop .button-style {
-    padding: 6px 10px;
+    padding: 6px 8px;
 }
 
 .navtop :hover {
@@ -169,37 +174,44 @@ input, textarea {
 
 .news {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 60%;
     margin: 0 auto;
-    padding: 20px 0;
 }
 
-.news div {
-    flex: 1 1 200px;
+.news-content {
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 80%; */
+    margin: 0 auto;
+}
+
+.news-content div {
+    flex: 1 1 300px;
     margin: 10px;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.20);
     border-radius: 10px 10px 0 0;
     padding: 0 0 20px 0;
 }
 
-.news h2 {
-    padding: 10px 10px 5px 10px;
+.news-content h2 {
+    padding: 15px 10px 10px 10px;
     text-transform: uppercase;
 }
 
-.news p {
-    padding: 0 10px 15px 10px;
+.news-content p {
+    padding: 0 10px 20px 10px;
 }
 
-.news img {
+.news-content img {
     max-width: 100%;
     display: block;
     border-radius: 10px 10px 0 0;
 }
 
-.news .button-style {
-    margin-left: 15px;
+.news-content .button-style {
+    margin-left: 10px;
 }
 
 .content {
@@ -210,18 +222,22 @@ input, textarea {
     text-align: justify;
 }
 
+.content p {
+    margin-bottom: 50px;
+}
+
 .calendar {
     display: flex;
     flex-direction: column;
     padding: 50px 0;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
 .calendar p {
     display: flex;
     color: var(--pri-color);
-    line-height: 0.5;
+    line-height: 1;
     font-size: 18px;
 }
 
@@ -335,20 +351,19 @@ input, textarea {
     color: var(--sec-color);
 }
 
-
-
-@media (max-width: 768px) {
+/* Tablet responsible code */
+@media (max-width: 990px) {
     .header{
         display: flex;
         flex-wrap: nowrap;
     }
 
     .logo-link {
-        margin-left: 10px;
+        margin-left: 5%;
     }
 
     .menu {
-        margin-right: 10px;
+        margin-right: 5%;
     }
     .header img {
         width: 40px;
@@ -387,9 +402,13 @@ input, textarea {
         justify-content: center;
         gap: 10px;
     }
+
+    .calendar {
+    width: 80%;
+    }
 }
 
-
+/* Mobile responsible code */
 @media (max-width: 480px) {
     body {
         font-size: 16px;
@@ -406,11 +425,11 @@ input, textarea {
     }
 
     .logo-link {
-        margin-left: 10px;
+        margin-left: 5%;
     }
 
     .menu {
-        margin-right: 10px;
+        margin-right: 5%;
     }
 
     .header img {
@@ -453,5 +472,27 @@ input, textarea {
 
     .bottom-footer p {
         text-align: center;
+    }
+
+    .calendar {
+        width: 90%;
+    }
+
+    .news {
+        max-width: 95%;
+    }
+
+    h1 {
+        font-size: 18px;
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
     }
 }
