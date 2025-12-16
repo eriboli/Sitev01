@@ -23,6 +23,11 @@ a {
     color: var(--pri-color);
 }
 
+a:hover {
+    color: var(--sec-color);
+}
+
+
 h1 {
     font-size: 1.5rem;
     font-weight: 800;
@@ -236,7 +241,8 @@ input[type="date"]::picker {
 .content {
     display: flex;
     flex-direction: column;
-    /* width: 100vw; */
+    width: 60%;
+    margin: 0 auto;
 }
 
 .content-data {
