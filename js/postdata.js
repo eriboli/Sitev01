@@ -1,4 +1,4 @@
-const gscript = 'https://script.google.com/macros/s/AKfycbw_iSSHJ8qhxx_wPRdu_Gh8n8j3OTIbUXiPhdbMrCo6UNmQBzCDfeJDnSu6_44aL6OaUA/exec';
+const gscript = 'https://script.google.com/macros/s/AKfycbzuVhgfFQ3VCHcROUZwU5-mTuJ1w0_MLdJTXJUBytF6zz2oxqg_KM5NUZ7hMbL_27xIPw/exec';
 
 const form_data = document.forms['formulario-contato'];
 
